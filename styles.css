@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-left, .header-center, .header-right {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header .header-left {
+    float: left;
+}
+
+header .header-right {
+    float: right;
+}
+
+.options-btn, .next-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.options-btn:hover, .next-btn:hover {
+    background-color: #0056b3;
+}
+
+.home {
+    background-image: url('background.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.topic {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    flex: 1 1 calc(50% - 40px); /* Adjust to fit two per row */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.topic:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .topic {
+        flex: 1 1 100%; /* Stack vertically on small screens */
+    }
+}
+
+.quiz, .completion {
+    padding: 20px;
+    text-align: center;
+}
+
+.question-container {
+    margin-top: 50px;
+}
+
+.answer-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.answer-btn:hover {
+    background-color: #0056b3;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0;
+    border-radius: 5px;
+}
+
+.completion-container {
+    margin-top: 50px;
+}
+
+.progress-circle {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+    line-height: 50px;
+    text-align: center;
+}
